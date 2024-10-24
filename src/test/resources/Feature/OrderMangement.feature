@@ -20,3 +20,7 @@
     And I click on My Account from profile drop down menu
     And I click on My Orders
     Then Order History should be displayed
+
+    Examples:
+      | FirstName| LastName| Email                 | Password    | ConfirmPassword | Address     | Country | State      | PostalCode | PhoneNumber |
+      |    Paul  | Jones   | PaulJones20@gmail.com | Pauljones1! |   Pauljones1!   | 222 Lily rd | USA     | Danny Lane | 2323       | 222333444   |
