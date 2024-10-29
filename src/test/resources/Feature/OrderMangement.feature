@@ -22,5 +22,5 @@
     Then Order History should be displayed
 
     Examples:
-      | FirstName| LastName| Email                 | Password    | ConfirmPassword | Address     | Country | State      | PostalCode | PhoneNumber |
-      |    Paul  | Jones   | PaulJones20@gmail.com | Pauljones1! |   Pauljones1!   | 222 Lily rd | USA     | Danny Lane | 2323       | 222333444   |
+      | FirstName| LastName| Email                 | Password    | ConfirmPassword | Address        | Country           | State  | PostalCode | PhoneNumber |
+      |    Paul  | Jones   | PaulJones21@gmail.com | Pauljones1! |   Pauljones1!   | 100 Bishopgate | United Kingdom    | London | E1 4SH     | 027333444   |
