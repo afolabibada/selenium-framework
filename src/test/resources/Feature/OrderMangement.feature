@@ -23,4 +23,4 @@
 
     Examples:
       | FirstName| LastName| Email                 | Password    | ConfirmPassword | Address        | Country           | State  | PostalCode | PhoneNumber |
-      |    Paul  | Jones   | PaulJones25@gmail.com | Pauljones1! |   Pauljones1!   | 100 Bishopgate | United Kingdom    | London | E1 4SH     | 027333444   |
+      |    Paul  | Jones   | PaulJones26@gmail.com | Pauljones1! |   Pauljones1!   | 100 Bishopgate | United Kingdom    | London | E1 4SH     | 027333444   |

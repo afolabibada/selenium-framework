@@ -24,8 +24,6 @@ public class OrderManagementSteps {
         OrderPagePO orderPagePO = new OrderPagePO(driver);
         orderPagePO.ClickEchocompressionFitshort();
 
-
-
     }
 
     @And("I click on product Size {int}")

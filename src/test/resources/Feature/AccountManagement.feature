@@ -11,7 +11,7 @@ Feature: Account Management
 
     Examples:
       | FirstName | LastName | Email                 | Password    | ConfirmPassword |
-      | Paul      | Jones    | pauljones19@gmail.com | Pauljones1! | Pauljones1!     |
+      | Paul      | Jones    | pauljones22@gmail.com | Pauljones1! | Pauljones1!     |
 
 
   @LoginAccount
@@ -24,7 +24,7 @@ Feature: Account Management
 
     Examples:
       | Email                 | Password    |
-      | pauljones19@gmail.com | Pauljones1! |
+      | pauljones22@gmail.com | Pauljones1! |
 
 
     @DuplicateAccount
@@ -36,7 +36,7 @@ Feature: Account Management
 
       Examples:
         | FirstName | LastName | Email                 | Password    | ConfirmPassword |
-        | Paul      | Jones    | pauljones19@gmail.com | Pauljones1! | Pauljones1!     |
+        | Paul      | Jones    | pauljones22@gmail.com | Pauljones1! | Pauljones1!     |
 
 
       @UnregisteredAccount
