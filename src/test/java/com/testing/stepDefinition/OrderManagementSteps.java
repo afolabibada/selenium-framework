@@ -1,6 +1,7 @@
 package com.testing.stepDefinition;
 
 import com.testing.cucumber.Hooks;
+import com.testing.pageObject.OrderPagePO;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,14 +13,25 @@ public class OrderManagementSteps {
 
     @And("On my account page I click on What's New tab")
     public void onMyAccountPageIClickOnWhatSNewTab() {
+        OrderPagePO orderPagePO = new OrderPagePO(driver);
+        orderPagePO.clickWhatsNew();
+
+
     }
 
     @And("I click on product link Echo compression Fit short")
     public void iClickOnProductLinkEchoCompressionFitShort() {
+        OrderPagePO orderPagePO = new OrderPagePO(driver);
+        orderPagePO.ClickEchocompressionFitshort();
+
+
+
     }
 
     @And("I click on product Size {int}")
     public void iClickOnProductSize(int arg0) {
+        OrderPagePO orderPagePO = new OrderPagePO(driver);
+        orderPagePO.ClickSize28();
     }
 
     @And("I click on colour black")

@@ -27,13 +27,13 @@ public class OrderPagePO {
     @FindBy(css = "#form-validate > div > div.primary > button > span")
     public static WebElement CreateAccountButton;
 
-    @FindBy(css = "What's New")
+    @FindBy(css = "#ui-id-3 > span")
     public static WebElement WhatsNew;
 
-    @FindBy(css ="product-image-photo" )
+    @FindBy(css ="#maincontent > div.columns > div.column.main > div.widget.block.block-static-block > div.block.widget.block-products-list.grid > div > div > ol > li:nth-child(1) > div > a > span > span > img" )
     public static WebElement EchocompressionFitshort;
 
-    @FindBy(css = "28")
+    @FindBy(id = "option-label-size-157-item-175")
     public static WebElement Size28;
 
     @FindBy(css = "Black")
@@ -62,6 +62,19 @@ public class OrderPagePO {
 
     public  OrderPagePO(WebDriver driver){
         PageFactory.initElements(driver,this);}
+
+
+
+    //Stage 3 - Page Specific Methods
+    public void clickWhatsNew(){
+        WhatsNew.click();
+    }
+
+    
+
+
+
+
 
 
 
