@@ -1,9 +1,11 @@
 package com.testing.pageObject;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.w3c.dom.html.HTMLInputElement;
 
 public class OrderPagePO {
 
@@ -36,26 +38,48 @@ public class OrderPagePO {
     @FindBy(id = "option-label-size-157-item-175")
     public static WebElement Size28;
 
-    @FindBy(css = "Black")
+    @FindBy(id = "option-label-color-93-item-49")
     public static WebElement ColourBlack;
 
-    @FindBy(css= "Add to Cart")
+    @FindBy(css= "#product-addtocart-button")
     public static WebElement AddtoCart;
 
-    @FindBy(id = "input-text")
+    @FindBy(xpath =  "//span[text()='MyAccount']" )
+    public static WebElement CartIcon;
+
+    @FindBy(id = "#maincontent > div.columns > div > div.cart-container > div.cart-summary._sticky > ul > li:nth-child(1) > button > span")
+    public static WebElement CheckOut;
+
+    @FindBy(id = "#CFQYTGK" )
     public static WebElement Address;
 
-    @FindBy(id = "select")
+    @FindBy(id = "#LTDE9XF")
     public static WebElement Country;
 
-    @FindBy(id = "select")
+    @FindBy(id = "#RLD7KXT")
     public static WebElement State;
 
-    @FindBy(id = "input-text")
+    @FindBy(id = "#QCF79GR")
     public static WebElement PostalCode;
 
-    @FindBy(id = "input-text")
+    @FindBy(id = "#EEQNNMO")
     public static WebElement PhoneNumber;
+
+    @FindBy(id = "#checkout-shipping-method-load > table > tbody > tr:nth-child(1) > td:nth-child(1) > input")
+    public static WebElement FlatRate;
+
+    @FindBy(id = "#shipping-method-buttons-container > div > button > span")
+    public static WebElement Next;
+
+    @FindBy(id ="#checkout-payment-method-load > div > div > div.payment-method._active > div.payment-method-content > div.actions-toolbar > div > button > span" )
+    public static WebElement PlaceOrder;
+
+
+
+
+
+
+
 
 
     // Stage2 - Initialise web element using selenium webdriver
@@ -66,37 +90,36 @@ public class OrderPagePO {
 
 
     //Stage 3 - Page Specific Methods
-    public void clickWhatsNew(){
-        WhatsNew.click();
-    }
-
-    
 
 
+    public void clickWhatsNew(){WhatsNew.click();}
 
+    public void clickEchocompressionFitshort() {EchocompressionFitshort.click();}
 
+    public void clickSize28() {Size28.click();}
 
+    public void clickColourBlack() {ColourBlack.click();}
 
+    public void clickAddtocart() {AddtoCart.click();}
 
+    public void clickonCartIcon() {CartIcon.click();}
 
+    public void clickCheckOut() {CheckOut.click();}
 
+    public void clickAddress() {Address.click();}
 
+    public void clickCountry() {Country.click();}
 
+    public void clickState() {State.click();}
 
+    public void clickPostalCode() {PostalCode.click();}
 
+    public void clickPhoneNumber() {PhoneNumber.click();}
 
+    public void clickFlatRate() {FlatRate.click();}
 
+    public void clickNext() {Next.click();}
 
-
-
-
-
-
-
-
-
-
-
-
+    public void clickPlaceOrder() {PlaceOrder.click();}
 
 }
